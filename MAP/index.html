@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script> -->
+    <title>Chart & Map</title>
+</head>
+
+<body>
+    <div class="container text-center p-4">
+        <div class="row">
+            <div class="col">
+                <div style="width: 100px; height: 100px;">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="col">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <caption class="caption-bottom">
+          Table 3.1: Professional wrestlers and their signature moves.
+        </caption>
+        <thead>
+          <tr>
+            <th>Wrestler</th>
+            <th>Signature Move(s)</th>
+            <th>p</th>
+            <th>p</th>
+            <th>p</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Stone Cold" Steve Austin</td>
+            <td>Stone Cold Stunner, Lou Thesz Press</td>
+          </tr>
+          <tr>
+            <td>Bret "The Hitman" Hart</td>
+            <td >The Sharpshooter</td>
+          </tr>
+          <tr>
+            <td>Razor Ramon</td>
+            <td>Razor's Edge, Fallaway Slam</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
